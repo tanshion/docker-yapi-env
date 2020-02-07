@@ -15,5 +15,10 @@
           "user": "***@163.com",
           "pass": "*****"
       }
-    }
+    },
+    "plugins": [
+        {
+            "name": "import-swagger-customize"
+        }
+    ]
 }
