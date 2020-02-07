@@ -21,7 +21,12 @@ services:
     volumes:
       - ./yapi:/my-yapi
     entrypoint: yapi
-    command: install -v v1.8.7
+    command:
+      - /bin/sh
+      - -c
+      - |
+        install -v v1.8.7
+        plugin --name yapi-plugin-import-swagger-customize
   update:
     image: tanshion/yapi
     depends_on:
