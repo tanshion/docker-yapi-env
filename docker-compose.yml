@@ -21,7 +21,7 @@ services:
     volumes:
       - ./yapi:/my-yapi
     entrypoint: yapi
-    command: install -v v1.8.5
+    command: install -v v1.8.7
   update:
     image: tanshion/yapi
     depends_on:
